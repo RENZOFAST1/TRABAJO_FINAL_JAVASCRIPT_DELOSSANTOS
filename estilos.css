@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ICONO DE WHATSSAPP */
+#whatsapp {
+    width: 200px;    /*Ancho de pagina*/
+    border-radius: 35px;  /*Curvaturas de as esquinas del icono*/
+    position: fixed;
+    bottom: 20px; /*Parte baja*/
+    right: 20px; /*Posicionamiento derecho*/
+}
+/* Estilos de cuerpo principal */
+body{
+    background-color: white; /*Fondo de pantalla blanco*/
+}
+/*parrafos*/
+p {
+    color: #58635C;
+    font-family:"Gudea", sans-serif; /*formato de letras*/
+}
+
+h1 {
+    font-size: 2em;        }
+h3 {
+    font-size: 1.2em;
+}
+/*Tamanos de parrafos*/
+h1, h3 {
+    color:black; /*color de parrafos*/
+    font-family:'Fredoka One', sans-serif; /*formato de letras*/
+}
+h2{
+    width: 600px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*formato de letra*/
+    color: white; /*Color de parrafo*/
+    box-shadow: 7px 13px 37px #000;
+}
+
+.title-site {
+    height: 100px ;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.title-site > img {
+    display: block;
+    float: left;
+}
+
+.title-site > h3 {
+    display: block;
+    float: left;
+}
+/* Estilos del catalogo */
+/* #Catalogo {
+    background-color: #FFF;
+}*/
+.producto > p {
+    font-family: "Gudea", sans-serif;
+}
+
+.producto {
+    display: block;
+    border-color: #CB461B;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.producto > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.producto > h3 {
+    margin-bottom: 1em;
+}
+
+/* Pie de página */
+#Pie {
+    padding: 20px 0px 20px 0px;
+    border-top: 4px #010659 dashed;
+    background: #BF0F0F;
+}
+
+#Pie > p {
+    display: block;
+    text-align: center;
+    color:#fff;
+}
+#sidebar {
+    min-width: 270px;
+    max-width: 270px;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  #sidebar .h6 {
+    color: white;
+  }
+  #sidebar.active {
+    margin-left: -270px;
+  }
+  #sidebar ul.components {
+    padding: 0;
+  }
+  #sidebar ul li {
+    font-size: 14px;
+  }
+  #sidebar ul li > ul {
+    margin-left: 10px;
+  }
+  #sidebar ul li > ul li {
+    font-size: 13px;
+  }
+  #sidebar ul li > ul li a {
+    border-bottom: 1px solid transparent;
+  }
+  #sidebar ul li > ul li a span {
+    color: black;
+  }
+  #sidebar ul li a {
+    padding: 10px 0;
+    display: block;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  #sidebar ul li a span {
+    color: white;
+  }

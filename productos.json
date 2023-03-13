@@ -1,0 +1,74 @@
+﻿[
+    {
+        "sku": "TP614EL1AHUOLLPE",
+        "name": "Amazon Echo Show 5 2021",
+        "price": "129",
+        "offer": "0.15"
+    },
+    {
+        "sku": "LE060EL0HR4G9LPE",
+        "name": "FOCO SMART XIAOMI MULTICOLOR 2da GENERACIÓN",
+        "price": "3899",
+        "offer": "0.41"
+    },
+    {
+        "sku": "EP057EL128KOULPE",
+        "name": "Cámara Inalambrica Wifi C8C LITE Full HD para Exteriores - Ezviz",
+        "price": "1150",
+        "offer": "0.30"
+    },
+    {
+        "sku": "OE991EL0U4PXVLPE",
+        "name": "Robot aspiradora iRobot Roomba i3 plus",
+        "price": "120",
+        "offer": "0.66"
+    },
+    {
+        "sku": "XP799EL166UO8LPE",
+        "name": "JBL Parlante Bluetooth Charge 5",
+        "price": "435",
+        "offer": "0.19"
+    },
+    {
+        "sku": "XP764EL0DGME1LPE",
+        "name": "Audífonos Skullcandy Dime True wireless",
+        "price": "449",
+        "offer": "0.32"
+    },
+    {
+        "sku": "XP764EL0C62E9LPE",
+        "name": "AirPods Pro con Estuche de Carga Magsafe",
+        "price": "1699",
+        "offer": "0.47"
+    },
+    {
+        "sku": "XI061EL17ND2HLPE",
+        "name": "GOPRO HERO10 CHDHX-111-RW BLACK",
+        "price": "189",
+        "offer": "0.52"
+    },
+    {
+        "sku": "UB801EL1K9UCVLPE",
+        "name": "Monitores De Estudio Krk Rp5G4 - Par",
+        "price": "999",
+        "offer": "0.62"
+    },
+    {
+        "sku": "XI061EL07IPJILPE",
+        "name": "Audifono Gamer Wireless Stealth 600Negro",
+        "price": "220",
+        "offer": "0.50"
+    },
+    {
+        "sku": "VS653EL1LQW0VLPE",
+        "name": "APPLE iPhone 12 128GB 4GB RAM",
+        "price": "199",
+        "offer": "0.50"
+    },
+    {
+        "sku": "VI068EL0G65WJLPE",
+        "name": "SAMSUNG Galaxy Z Flip 4 256GB 8GB",
+        "price": "480",
+        "offer": "0.37"
+    }
+]

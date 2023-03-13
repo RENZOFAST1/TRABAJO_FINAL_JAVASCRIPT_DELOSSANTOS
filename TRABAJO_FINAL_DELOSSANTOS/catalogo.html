@@ -1,0 +1,292 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pagina de inicio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<!-- CUERPO DE PAGINA -->
+<body onload="primeraFuncion()">
+    <!-- BARRA DE NAVEGACION  -->
+    <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="images/important_devices_white_24dp.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      TECH STORE
+    </a>
+    <!-- BOTON INICIO -->
+    <a class="navbar-brand" href="catalogo.html">Inicio</a> 
+    <!-- BOTON CONTACTANOS -->
+    <a class="navbar-brand" href="registroCuenta.html">Registrarse</a>
+  </nav>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/950972184">  <!--DIRECCIONAMIENTO A MI WHATSSAP -->
+        <img id="whatsapp" src="images/botonwhatsapp.png"> 
+    </a>
+
+    <!-- Encabezado -->
+    <div id="Encabezado">
+        <div class="title-site">
+            <img src="images/portada1.png"><!--TITULO STORE TECH -->
+            <h1>TELECOMUNICACIOES Y TECNOLOGIA EN UNA SOLO TIENDA - TECH STORE </h1>
+
+    <!-- Menú de opciones -->
+    <p>
+        
+        <!-- Ver carrito de compra -->
+        <a class="btn btn-success btn-lg" onclick="actualizarLista()" href="#" data-bs-toggle="modal" data-bs-target="#carritoCompra">
+            Ir al carrito
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+        </a>
+
+        <!--CARRTITOS DE COMPRAA MODAL-->
+        <div class="modal fade" id="carritoCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compra</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="listaCarrito" class="modal-body">
+                        El carrito está vacio.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Realizar la compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </p>
+
+    <!-- Productos -->
+    <div id="Catalogo" class="container">
+        <div class="row">
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Amazon Echo Show 5 2021 ALEXA - 5HT</h3>
+                <img src="images/productos/pro1.png" width="100px">
+                <p><span class="oferta">S/ 400</span> - 50%</p>
+                <p class="precio">S/ 200</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>FOCO SMART XIAOMI MULTICOLOR 2da GENERACIÓN</h3>
+                <img src="images/productos/pro2.png" width="100px">
+                <p><span class="oferta">S/ 100.00</span> - 30%</p>
+                <p class="precio">S/ 70.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Cámara Inalambrica Wifi C8C LITE Full HD para Exteriores - Ezviz</h3>
+                <img src="images/productos/pro3.png" width="100px">
+                <p><span class="oferta">S/ 190.00</span> - 47%</p>
+                <p class="precio">S/ 99.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Robot aspiradora iRobot Roomba i3 plus</h3>
+                <img src="images/productos/pro4.png" width="100px">
+                <p><span class="oferta">S/ 3220.00</span> - 50%</p>
+                <p class="precio">S/ 2300.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>JBL Parlante Bluetooth Charge 5</h3>
+                <img src="images/productos/pro5.png" width="100px">
+                <p><span class="oferta">S/ 1150.00</span> - 30%</p>
+                <p class="precio">S/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Audífonos Skullcandy Dime True wireless</h3>
+                <img src="images/productos/pro6.png" width="100px">
+                <p><span class="oferta">S/ 190.00</span> - 47%</p>
+                <p class="precio">S/ 99.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>AirPods Pro con Estuche de Carga Magsafe</h3>
+                <img src="images/productos/pro8.png" width="100px">
+                <p><span class="oferta">S/ 220.00</span> - 50%</p>
+                <p class="precio">S/ 109.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>GOPRO HERO10 CHDHX-111-RW BLACK</h3>
+                <img src="images/productos/pro9.png" width="100px">
+                <p><span class="oferta">S/ 1150.00</span> - 30%</p>
+                <p class="precio">S/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Monitores De Estudio Krk Rp5G4 - Par</h3>
+                <img src="images/productos/pro10.png" width="100px">
+                <p><span class="oferta">S/ 1150.00</span> - 30%</p>
+                <p class="precio">S/ 769.00</p>
+                <p><a class="btn btn-primary" hre="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Audifono Gamer Wireless Stealth 600Negro</h3>
+                <img src="images/productos/pro11.png" width="100px">
+                <p><span class="oferta">S/ 190.00</span> - 47%</p>
+                <p class="precio">S/ 99.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>APPLE iPhone 12 128GB 4GB RAM</h3>
+                <img src="images/productos/pro12.png" width="100px">
+                <p><span class="oferta">S/ 220.00</span> - 50%</p>
+                <p class="precio">S/ 109.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>SAMSUNG Galaxy Z Flip 4 256GB 8GB</h3>
+                <img src="images/productos/pro13.png" width="100px">
+                <p><span class="oferta">S/ 1150.00</span> - 30%</p>
+                <p class="precio">S/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalEntrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="mx-auto d-block" src="images/modal4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+
+        // Crear una cookie
+        var ObjetosSeleccionados = [];
+
+        // Función para el modal de promoción
+        function primeraFuncion() {
+            const modalEntrada = new bootstrap.Modal("#modalEntrada");
+            modalEntrada.show();
+        }
+
+        // Función para los botones añadir carrito
+        function addCart(objeto){
+            // Obtener el elemento donde se encuetra
+            var contenedor = objeto.parentElement.parentElement;
+            // Datos del producto
+            var nombre = contenedor.getElementsByTagName("h3")[0];
+            var precio = contenedor.getElementsByTagName("p")[0];
+            var precioFinal = contenedor.getElementsByTagName("p")[1];
+            // Crear objeto
+            var producto = {
+                "nombre" : nombre.innerText,
+                "precio" : precio.innerText,
+                "precioFinal" : precioFinal.innerText
+            }
+            // Añadir al array de objetos
+            ObjetosSeleccionados.push(producto);
+        }
+
+        // Función actualizar lista
+        function actualizarLista(){
+            var lista = document.getElementById("listaCarrito");
+            // Crear el HTML
+            var texto = "";
+            ObjetosSeleccionados.forEach(element => {
+                texto = texto + "<div class='productoLista'>";
+                texto = texto + "<p>"+element.nombre+"</p>";
+                texto = texto + "<p>"+element.precio+"</p>";
+                texto = texto + "<p>"+element.precioFinal+"</p>";
+                texto = texto + "</div>";
+            });
+            lista.innerHTML = texto;
+        }
+    </script>
+    <!-- Pie de Pagina-->
+<footer class="text-center text-lg-start bg-white text-muted">
+   
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>TECH STORE
+            </h6>
+            <p>
+                Ofrecer variedad, calidad y garantía en productos con una experiencia de 
+                compra que nos defina como expertos, todo eso al mejor precio.
+            </p>
+          </div>
+           <!--SERVICOS AL CIENTE -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+                Servicios al Cliente
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Protocolos de delivery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Factura Electronica</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Certificado de Garantia</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Retiro en tienda</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!--ATENCION AL CIENTE -->
+            <h6 class="text-uppercase fw-bold mb-4">
+                Atención al Cliente
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">+ (01) 2020900</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">+ 950972184</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">rdelosantos@certus.edu.pe</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Libro de reclamaciones</a>
+            </p>
+          </div>
+          <!-- CONTACTANOS -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>Av. la Marina 3315, San Miguel 15087</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              renzodelosantoseegg@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COPYRIGHT -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">GraciasBootstrap.com.pe</a>
+    </div>
+    <!-- COPYRIGHT -->
+  </footer>
+  <!-- PIE DE PAGINA -->
+</body>
